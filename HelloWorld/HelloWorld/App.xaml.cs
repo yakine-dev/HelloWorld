@@ -13,7 +13,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new ImagePageResource();
+            MainPage = new PlatImagePage();
         }
 
         protected override void OnStart()
