@@ -13,7 +13,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new PhotoGalleryPage();
+            MainPage = new ListViewPage();
         }
 
         protected override void OnStart()
