@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.PhotoGalleryPage"
+             BackgroundColor="Black">
+    <AbsoluteLayout>
+        <Image AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Source="http://lorempixel.com/1920/1080/city/1/" Aspect="AspectFit" x:Name="ImageView"/>
+        <Button AbsoluteLayout.LayoutBounds="0.05,0.05,40,40" BackgroundColor="Transparent" BorderColor="Transparent" AbsoluteLayout.LayoutFlags="PositionProportional" Image="left" x:Name="BtnPrev" Clicked="BtnPrev_OnClicked"/>
+        <ActivityIndicator AbsoluteLayout.LayoutBounds="0.5,0.05,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" IsRunning="{Binding Source={x:Reference ImageView},Path=IsLoading}" Color="White"/>
+        <Button AbsoluteLayout.LayoutBounds="0.95,0.05,40,40" BackgroundColor="Transparent" BorderColor="Transparent" AbsoluteLayout.LayoutFlags="PositionProportional" Image="right" x:Name="BtnNext" Clicked="BtnNext_OnClicked"/>
+    </AbsoluteLayout>
+</ContentPage>
