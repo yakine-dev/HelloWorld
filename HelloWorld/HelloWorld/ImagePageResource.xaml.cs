@@ -15,7 +15,7 @@ namespace HelloWorld
 		public ImagePageResource ()
 		{
 			InitializeComponent ();
-            BackgroundImage.Source = ImageSource.FromResource("HelloWorld.Images.background.jpg");
+            //BackgroundImage.Source = ImageSource.FromResource("HelloWorld.Images.background.jpg");
 		}
 	}
 }
